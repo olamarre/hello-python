@@ -11,8 +11,8 @@ dependencies:
     - numpy=1.23
     - scipy=1.10
     - matplotlib=3.6
-    - pytest=7.1
     - jupyterlab=3.5
+    - pytest=7.1
     - pip:
         # - <some package only available on PyPI>
         - -e .  # build local hello_python package
