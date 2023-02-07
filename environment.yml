@@ -1,0 +1,19 @@
+name: hello-env
+channels:
+    - defaults
+    - conda-forge
+    - anaconda
+
+dependencies:
+    - python=3.9
+    - pip=22.3
+
+    - numpy=1.23
+    - scipy=1.10
+    - matplotlib=3.6
+    - pytest=7.1
+    - jupyterlab=3.5
+    - pip:
+        # - <some package only available on PyPI>
+        - -e .  # build local hello_python package
+
