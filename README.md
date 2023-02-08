@@ -1,4 +1,5 @@
 # hello-python
+
 A sample Python project for robotics researchers.
 
 ## Environment setup
@@ -16,4 +17,3 @@ conda activate hello-env
 # in Jupyter notebooks)
 python -m ipykernel install --user --name hello-env
 ```
-

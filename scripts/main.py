@@ -4,6 +4,8 @@
     A sample python script
 
     Usage: python main.py -h
+    (use a module like argparse to define a helper function and
+    describe input variables)
 
     Author: <yourself, <email>>
     Affl.: <your affiliation>
@@ -21,7 +23,7 @@ def main():
 
 if __name__ == "__main__":
 
-    # Logging setup
+    # Load the repository's logging configuration
     with open(Path(REPO_CFG.root_dir, 'logging.json')) as f:
         log_cfg = json.load(f)
     
