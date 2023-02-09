@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """ 
-    Configuration & directory paths for the current package
+    Utilities only for the development of the hello package
 
     Author: Olivier Lamarre
     Affl.: STARS Laboratory, University of Toronto
