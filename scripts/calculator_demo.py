@@ -16,10 +16,18 @@ import logging
 import logging.config
 import json
 
-from hello_python.config import REPO_CFG
+from hello.calculator import add, subtract, multiply, divide
+from hello.dev import REPO_CFG
 
 def main():
-    pass
+
+    log.info(f"In main")
+
+    res = add(2,3)
+    res = subtract(10,4)
+    res = multiply(4,5)
+    res = divide(5,2)
+    
 
 if __name__ == "__main__":
 
@@ -34,6 +42,6 @@ if __name__ == "__main__":
     log_cfg['handlers']['file']['filename'] = lfn
     logging.config.dictConfig(log_cfg)
     log = logging.getLogger(__name__)
-    print(f"Logging to {lfn}")
 
+    log.info(f"Logging to {lfn}")
     main()
