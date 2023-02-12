@@ -1,29 +1,26 @@
-#!/usr/bin/env python
-
-"""
-    Test the hello.calculator module
-
-    Author: <yourself, <email>>
-    Affl.: <your affiliation>
-"""
+from hello.calculator import add, add_lists
+import numpy as np
 
 import pytest
-from hello.calculator import add, subtract, multiply, divide
 
 
 def test_add():
-    assert add(1,2) == 3
-    assert add(4,5.5) == 9.5
+    assert add(3, 5) == 8
+    with pytest.raises(Exception):
+        add([1, 2, 3], 4)
 
-def test_subtract():
-    assert subtract(5,4) == 1
-    assert subtract(3,8) == -5
 
-def test_multiply():
-    assert multiply(1,0) == 0
-    assert multiply(2.5,3) == 7.5
+def test_add_lists():
+    assert add_lists([1, 1, 1], [2, 2, 2]) == [3, 3, 3]
 
-def test_divide():
-    assert divide(3,2) == 1.5
-    with pytest.raises(ZeroDivisionError):
-        divide(4,0)
+    # for numpy arrays, need to use:
+    np.testing.assert_allclose(add_lists([1, 1, 1], [2, 2, 2]), np.array([3, 3, 3]))
+
+    with pytest.raises(Exception):
+        add_lists([1, 2, 3], 4)
+
+
+if __name__ == "__main__":
+    # only here for quick debugging: can easily run individual tests
+    test_add()
+    test_add_lists()
