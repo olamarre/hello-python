@@ -21,5 +21,6 @@ def test_add_lists():
 
 
 if __name__ == "__main__":
+    # only here for quick debugging: can easily run individual tests
     test_add()
     test_add_lists()
