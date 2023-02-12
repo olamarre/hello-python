@@ -17,6 +17,10 @@ jobs:
   build-linux:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        shell: bash -l {0}
+
     steps:
     - uses: actions/checkout@v2
     - name: Set up conda environment
