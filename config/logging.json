@@ -15,7 +15,7 @@
         },
         "file": {
             "class": "logging.FileHandler",
-            "filename": "tbd.log",
+            "filename": "to_be_determined.log",
             "mode": "w",
             "level": "INFO",
             "formatter": "simple"
