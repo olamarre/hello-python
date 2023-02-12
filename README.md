@@ -7,7 +7,7 @@ A sample Python project for robotics researchers.
 
 ## Environment setup
 
-After installing conda ([Miniconda3](https://docs.conda.io/en/latest/miniconda.html) recommended), run the following:
+After installing conda ([Miniconda3](https://docs.conda.io/en/latest/miniconda.html) recommended), run the following (if you have installed the [mamba](https://mamba.readthedocs.io/en/latest/installation.html#existing-conda-install) package, replace all "conda" commands with "mamba" below):
 
 ```sh
 git clone https://github.com/olamarre/hello-python.git && cd hello-python

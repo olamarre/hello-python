@@ -1,7 +1,16 @@
-from hello.calculator import add, add_lists
-import numpy as np
+#!/usr/bin/env python
 
+""" 
+    Test the calculator module
+
+    Author: <yourself, <email>>
+    Affl.: <your affiliation>
+"""
+
+import numpy as np
 import pytest
+
+from hello.calculator import add, add_lists, divide
 
 
 def test_add():
@@ -18,6 +27,13 @@ def test_add_lists():
 
     with pytest.raises(Exception):
         add_lists([1, 2, 3], 4)
+
+
+def test_divide():
+    assert divide(5, 2) == 2.5
+
+    with pytest.raises(ZeroDivisionError):
+        divide(1, 0)
 
 
 if __name__ == "__main__":

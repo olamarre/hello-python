@@ -9,13 +9,15 @@ dependencies:
     - pip=22.3
 
     - numpy=1.23
-    - scipy=1.10
     - matplotlib=3.6
     - jupyterlab=3.5
     - ipynbname=2021.3
+
+    # Testing & linting
     - pytest=7.1
     - pytest-cov=4.0
     - flake8=6.0
+    
     - pip:
         # - <some package only available on PyPI>
         - -e .  # build local hello_python package
