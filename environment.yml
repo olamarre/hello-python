@@ -17,4 +17,3 @@ dependencies:
     - pip:
         # - <some package only available on PyPI>
         - -e .  # build local hello_python package
-
