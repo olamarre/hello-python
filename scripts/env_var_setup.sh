@@ -34,5 +34,4 @@ mkdir -v -p $CONDA_PREFIX/etc/conda/deactivate.d
 echo "export ${VAR_NAME}=${VAR_VALUE}" >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 echo "unset ${VAR_NAME}" >> $CONDA_PREFIX/etc/conda/deactivate.d/env_vars.sh
 
-conda deactivate
-echo "Reactivate the conda environment"
+echo "Deactivate & (re)activate the conda environment"
