@@ -1,5 +1,8 @@
 # hello-python
 
+![Tests](https://github.com/olamarre/hello-python/actions/workflows/python-conda-tests.yml/badge.svg)
+<!-- ![Flake8](https://github.com/utiasSTARS/spatiotemp-planning/actions/workflows/flake8.yml/badge.svg) -->
+
 A sample Python project for robotics researchers.
 
 ## Environment setup

@@ -15,6 +15,7 @@ dependencies:
     - ipynbname=2021.3
     - pytest=7.1
     - pytest-cov=4.0
+    - flake8=6.0
     - pip:
         # - <some package only available on PyPI>
         - -e .  # build local hello_python package
