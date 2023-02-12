@@ -20,7 +20,6 @@ build-backend = "setuptools.build_meta"
 exclude = ['tests']
 
 [tool.pytest.ini_options]
-addopts = "--cov"  # prints a coverage report after a test
 testpaths = [
     "tests",
 ]
