@@ -1,13 +1,14 @@
 # hello-python
 
-![Tests](https://github.com/olamarre/hello-python/actions/workflows/python-conda-tests.yml/badge.svg)
-<!-- ![Flake8](https://github.com/utiasSTARS/spatiotemp-planning/actions/workflows/flake8.yml/badge.svg) -->
+![Tests](https://github.com/olamarre/hello-python/actions/workflows/python-conda-app.yml/badge.svg)
 
 A sample Python project for robotics researchers.
 
 ## Environment setup
 
-After installing conda ([Miniconda3](https://docs.conda.io/en/latest/miniconda.html) recommended), run the following (if you have installed the [mamba](https://mamba.readthedocs.io/en/latest/installation.html#existing-conda-install) package, replace all "conda" commands with "mamba" below):
+1. Install conda ([Miniconda3](https://docs.conda.io/en/latest/miniconda.html) recommended)
+2. (Optional) install the [mamba](https://mamba.readthedocs.io/en/latest/installation.html#existing-conda-install) package. In this case, replace all the "conda" commands with "mamba" below.
+3. Run the following:
 
 ```sh
 git clone https://github.com/olamarre/hello-python.git && cd hello-python

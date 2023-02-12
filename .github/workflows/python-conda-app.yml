@@ -2,7 +2,7 @@
 # It will use conda for dependency management, see 
 # https://autobencoder.com/2020-08-24-conda-actions/
 
-name: Python Package Using Anaconda
+name: Pytest & Flake8
 
 permissions:
   contents: read
@@ -19,10 +19,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    # - name: Set up Python 3.9
-    #   uses: actions/setup-python@v2
-    #   with:
-    #     python-version: 3.9
     - name: Install dependencies
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
