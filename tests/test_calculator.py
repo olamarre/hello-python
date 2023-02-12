@@ -11,7 +11,7 @@ def test_add():
 
 
 def test_add_lists():
-    assert add([1, 1, 1], [2, 2, 2]) == [3, 3, 3]
+    assert add_lists([1, 1, 1], [2, 2, 2]) == [3, 3, 3]
 
     # for numpy arrays, need to use:
     np.testing.assert_allclose(add_lists([1, 1, 1], [2, 2, 2]), np.array([3, 3, 3]))
