@@ -17,7 +17,7 @@
 data/**
 !data/README.md
 
-
 !docs/**
 *.coverage
+.pytest_cache/**
 venv/
