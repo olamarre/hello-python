@@ -28,11 +28,13 @@ def main():
     res = multiply(4,5)
     res = divide(5,2)
     
+    log.info(f"Done demonstrating calculator")
+    
 
 if __name__ == "__main__":
 
     # Load the repository's logging configuration
-    with open(Path(REPO_CFG.root_dir, 'logging.json')) as f:
+    with open(Path(REPO_CFG.config_dir, 'logging.json')) as f:
         log_cfg = json.load(f)
     
     log_dir = Path(REPO_CFG.data_dir, 'logs')
