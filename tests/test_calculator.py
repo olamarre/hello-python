@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-""" 
+"""
     Test the calculator module
 
     Author: <yourself, <email>>
@@ -23,7 +23,8 @@ def test_add_lists():
     assert add_lists([1, 1, 1], [2, 2, 2]) == [3, 3, 3]
 
     # for numpy arrays, need to use:
-    np.testing.assert_allclose(add_lists([1, 1, 1], [2, 2, 2]), np.array([3, 3, 3]))
+    np.testing.assert_allclose(
+        add_lists([1, 1, 1], [2, 2, 2]), np.array([3, 3, 3]))
 
     with pytest.raises(Exception):
         add_lists([1, 2, 3], 4)

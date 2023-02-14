@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-""" 
+"""
     A set of calculator functions
 
     Author: <your name, <email>>
