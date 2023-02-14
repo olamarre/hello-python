@@ -21,3 +21,13 @@ conda activate hello-env
 # in Jupyter notebooks)
 python -m ipykernel install --user --name hello-env
 ```
+
+## Tests & checkups
+
+```sh
+# Coding style checkup / linting
+flake8 .
+
+# Verify tests & code coverage
+pytest .
+```
