@@ -4,6 +4,8 @@
 
 A sample Python project for robotics researchers.
 
+Presented as part of the University of Toronto's Robotics Institute Tutorial Series.
+
 ## Environment setup
 
 1. Install conda ([Miniconda3](https://docs.conda.io/en/latest/miniconda.html) recommended)
